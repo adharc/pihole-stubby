@@ -18,7 +18,7 @@ sudo apt install stubby -y
 
 Back up and replace the default `stubby.yml `file with the stubby.yml file in this repo:
 ```
-sudo mv /etc/stubby/stubby.yml /etc/stubby/stubby.backup.yml
+sudo mv /etc/stubby/stubby.yml /etc/stubby/stubby.backup.yml && sudo wget -O /etc/stubby/stubby.yml https://raw.githubusercontent.com/adharc/pihole-stubby/main/stubby.yml
 ```
 
 You can edit and uncomment the configuration file to change the DNS servers used. **(Default: Cloudflare)**
